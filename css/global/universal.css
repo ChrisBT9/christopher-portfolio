@@ -194,8 +194,26 @@ main .intentions p span {
     display: grid;
     place-items: center;
     font-size: 1.5rem;
-    color: yellow;
-}
+    /* Using ease-in-out for smooth transitions */
+    animation: flash 3s infinite ease-in-out;
+  }
+  
+  @keyframes flash {
+    0% {
+      color: #FFD700; /* Gold */
+    }
+    33% {
+      color: #FFA500; /* Orange */
+    }
+    66% {
+      color: #FF4500; /* Orange Red */
+    }
+    100% {
+      color: #FFD700; /* Back to Gold */
+    }
+  }
+  
+
 
 /*---- Scrollbar ----*/
 ::-webkit-scrollbar {
