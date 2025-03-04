@@ -1,0 +1,202 @@
+footer {
+    background-image: linear-gradient(180deg, var(--body-bg-clr), var(--main-bg-clr));
+}
+/* projects */
+main .projects {
+    color: #fff;
+}
+main .projects * {
+    color: inherit;
+}
+main .projects .grid {
+    --grid-min-col-size: 600px;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(var(--grid-min-col-size), 100%), 1fr));
+    gap: 2rem;
+}
+main .projects .project-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    position: relative;
+    transition: transform .2s ease-in-out;
+    background-image: linear-gradient(360deg, hsl(220, 20%, 8%) ,hsla(220, 20%, 11%, .5), transparent);
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+}
+main .projects .edges {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+main .projects .edges::before,main .projects .edges::after {
+    content: '';
+    position: absolute;
+    background: rgba(255,255,255,.1);
+}
+main .projects .edges::before {
+    width: 2px;
+    height: 1rem;
+}
+main .projects .edges::after {
+    height: 2px;
+    width: 1rem;
+}
+main .projects .edges.top-left::before {
+    top: 0;
+    left: 0;
+}
+main .projects .edges.top-left::after {
+    top: 0;
+    left: 0;
+}
+main .projects .edges.top-right::before {
+    top: 0;
+    right: 0;
+}
+main .projects .edges.top-right::after {
+    top: 0;
+    right: 0;
+}
+main .projects .edges.bottom-left::before {
+    bottom: 0;
+    left: 0;
+}
+main .projects .edges.bottom-left::after {
+    bottom: 0;
+    left: 0;
+}
+main .projects .edges.bottom-right::before {
+    bottom: 0;
+    right: 0;
+}
+main .projects .edges.bottom-right::after {
+    bottom: 0;
+    right: 0;
+}
+main .project-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: background .2s ease-in-out;
+    z-index: 2;
+     &:hover, &:focus-visible {
+        background: rgba(255,255,255,.05)
+     }
+     &:focus-visible {
+        outline: 3px solid #fff;
+        outline-offset: 3px;
+     }
+}
+main .projects .project-card-img.good-catch {
+    background-image: url("../../images/pages/index/good-catch.webp");
+}
+main .projects .project-card-img.llamas-with-tanks {
+    background-image: url("../../images/pages/index/llamas-with-tanks.webp");
+}
+main .projects .project-card-img.unhappy-home-designer {
+    background-image: url("../../images/pages/index/unhappy-home-designer.webp");
+}
+main .projects .project-card-img {
+    min-width: 12.5rem;
+    height: 12.5rem;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+main .projects .publisher {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--green);
+}
+main .projects .project-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+main .projects .project-card-top {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    width: 100%;
+}
+main .projects .tab-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: auto;
+    width: 100%;
+    gap: .5rem;
+    border-radius: 5px;
+}
+
+main .projects .tab {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    padding: .5rem 1rem;
+    background: hsl(214, 56%, 47%);
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: 400;
+    width: fit-content;
+}
+main .projects fieldset {
+    border: 1px solid rgba(255,255,255,.1);
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+main .projects legend {
+    padding-inline: .5rem;
+    font-size: .8rem;
+    opacity: .5;
+}
+main .projects .project-description {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    height: 7.5ex;
+    line-height: 2.5ex;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 600px) {
+    main .projects .project-card-top {
+        flex-direction: column;
+    }
+    main .projects .project-card-img {
+        min-width: auto;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+    main .projects .project-content {
+        height: auto;
+    }
+}

@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="#" media="(prefers-color-scheme: dark)">
+    <link rel="icon" href="#" media="(prefers-color-scheme: light)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Christopher Turner - Portfolio</title>
+    <link rel="stylesheet" href="./css/global/universal.css">
+    <link rel="stylesheet" href="./css/global/header.css">
+    <link rel="stylesheet" href="./css/global/footer.css">
+    <link rel="stylesheet" href="./css/global/hero.css">
+    <link rel="stylesheet" href="./css/global/lightbox.css">
+    <link rel="stylesheet" href="./css/pages/llamas-with-tanks.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/75f6cf5fe8.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <header>
+        <div class="wrapper">
+          <a href="./index.html" class="logo"><h1>Chris Turner UI/UX</h1></a>
+          <nav class="navbar desktop">
+            <a href="./index.html">Home</a>
+            <a href="./good-catch.html">Good Catch</a>
+            <a href="./llamas-with-tanks.html" class="active">Llamas With Tanks</a>
+            <a href="./unhappy-home-designer.html">Unhappy Home Designer</a>
+            <a href="./contact.html">Contact</a>
+          </nav>
+          <div class="popover mobile-navbar">
+            <button class="popover-a menu" aria-label="menu"><i class="fa-solid fa-bars"></i></button>
+            <nav class="popover-b has-overlay" data-overlay-target="#blur-overlay">
+              <a href="./index.html">Home</a>
+              <a href="./good-catch.html">Good Catch</a>
+              <a href="./llamas-with-tanks.html" class="active">Llamas With Tanks</a>
+              <a href="./unhappy-home-designer.html">Unhappy Home Designer</a>
+              <a href="./contact.html">Contact</a>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <main>
+      <section class="hero">
+        <div class="marquee">
+            <div class="marquee-inner">
+            <div>
+                <div class="hero__bg llamas-with-tanks"></div>
+            </div>
+        </div>
+        </div>
+            <div class="wrapper">
+                <div class="slider slide-in-left">
+                    <h2 class="hero__title llamas-with-tanks">Llamas With Tanks</h2>
+                    <p class="hero__game-description">A game where the player is a llama in a tank firing at other tanks going through levels with various difficulties. Defeat all the enemies and get through all the levels to beat the game! This game is inspired by Wii Tanks and the soul of Hell Divers 2! Spreading democracy with every projectile!</p>
+                    <div class="video-row">
+                      <iframe width="560" height="315" 
+                      src="https://www.youtube.com/embed/G-8QzMv1OlA" 
+                      frameborder="0" 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                      allowfullscreen>
+                      </iframe> 
+                    <ul class="txt-group">
+                        <li><p><span>Duration</span> <i class='bx bx-right-arrow-alt'></i> Aug 2024 - Nov 2024</p></li>
+                        <li><p><span>Team Size</span> <i class='bx bx-right-arrow-alt'></i> 8 People</p></li>
+                        <li><p><span>Engine</span> <i class='bx bx-right-arrow-alt'></i> Unreal</p></li>
+                        <li><p><span>Role</span> <i class='bx bx-right-arrow-alt'></i> UI/UX Design</p></li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+      </section>
+
+      <section class="section-break">
+        <div class="wrapper">
+          <h2 class="section-heading">My Contributions</h2>
+          <p>My main contribution to the game were making menus and UI elements for everything in the game including transitions. I also created the graphic design for the UI using Photoshop.</p>
+        </div>
+      </section>
+
+      <section class="ui-design">
+        <div class="wrapper">
+          <h2 class="section-heading">Level 1</h2>
+          <div class="lightbox-target-row">
+            <div class="lightbox-target-container">
+              <div class="lightbox-target-img lightbox-a one">
+                <div class="intentions">
+                  <h3>Intentions</h3>
+                  <p>Display Level And Score of where the player is currently at.</p>
+                </div>
+              </div>
+              <div class="lightbox-target-header">
+                <div>
+                  <h2>Mission One UI - Score Board</h2>
+                  <hr>
+                </div>
+                <!-- START Card 1 - Top -->
+                <div class="overflow-txt-container">
+                  <p class="overflow-des">An iteration of how the scoreboard looked in game during early development.</p>
+                </div>
+                <button class="view-more-overflow">Read more</button>
+                <!-- END Card 1 - Top -->
+                  <ul class="card-list">
+                    <li><span>Time Spent</span><i class="fa-solid fa-arrow-right"></i>1 Day</li>
+                    <li><span>People</span><i class="fa-solid fa-arrow-right"></i>Me</li>
+                    <li><span>Tools</span><i class="fa-solid fa-arrow-right"></i>Unreal, Photoshop</li>
+                  </ul>
+                <!-- START Card 1 - Bottom -->
+                <div class="overflow-full-des">
+                  <div class="grouping">
+                    <p class="label">Description</p>
+                    <button class="close-overflow-full-des"><i class="fa-solid fa-xmark" aria-label="close description"></i></button>
+                  </div>
+                  <p>An iteration of how the scoreboard looked in game during early development.</p>
+                </div>
+                <!-- END Card 1 - Bottom -->
+              </div>
+              <button class="open-lightbox open-lightbox-1" aria-label="open lightbox"></button>
+            </div>
+            <div class="lightbox-target-container">
+              <div class="lightbox-target-img lightbox-b one">
+                <div class="intentions">
+                  <h3>Intentions</h3>
+                  <p>To bring up a menu where the game stayed still as you had the menu open.</p>
+                </div>
+              </div>
+              <div class="lightbox-target-header">
+                <div>
+                  <h2>Mission One UI - Pause Menu</h2>
+                  <hr>
+                </div>
+                <!-- START Card 2 - Top -->
+                <div class="overflow-txt-container">
+                  <p class="overflow-des">Pause menu in theme with the scene and rest of the UI.</p>
+                </div>
+                <button class="view-more-overflow">Read more</button>
+                <!-- END Card 2 - Top -->
+                  <ul class="card-list">
+                    <li><span>Time Spent</span><i class="fa-solid fa-arrow-right"></i>1 Day</li>
+                    <li><span>People</span><i class="fa-solid fa-arrow-right"></i>Me</li>
+                    <li><span>Tools</span><i class="fa-solid fa-arrow-right"></i>Unreal, Photoshop</li>
+                  </ul>
+                <!-- START Card 2 - Bottom -->
+                <div class="overflow-full-des">
+                  <div class="grouping">
+                    <p class="label">Description</p>
+                    <button class="close-overflow-full-des"><i class="fa-solid fa-xmark" aria-label="close description"></i></button>
+                  </div>
+                  <p>Pause menu in theme with the scene and rest of the UI.</p>
+                </div>
+                <!-- END Card 2 - Bottom -->
+              </div>
+              <button class="open-lightbox open-lightbox-1" aria-label="open lightbox"></button>
+            </div>
+            <div class="lightbox-target-container">
+              <div class="lightbox-target-img lightbox-c one">
+                <div class="intentions">
+                  <h3>Intentions</h3>
+                  <p>A screen that pops up in the event the character is destroyed.</p>
+                </div>
+              </div>
+              <div class="lightbox-target-header">
+                <div>
+                  <h2>Mission One UI - Lose Menu</h2>
+                  <hr>
+                </div>
+                <!-- START Card 3 - Top -->
+                <div class="overflow-txt-container">
+                  <p class="overflow-des">A lose screen that appears to give the player the option to leave back to main menu or retry the current level.</p>
+                </div>
+                <button class="view-more-overflow">Read more</button>
+                <!-- END Card 3 - Top -->
+                  <ul class="card-list">
+                    <li><span>Time Spent</span><i class="fa-solid fa-arrow-right"></i>1 Day</li>
+                    <li><span>People</span><i class="fa-solid fa-arrow-right"></i>Me</li>
+                    <li><span>Tools</span><i class="fa-solid fa-arrow-right"></i>Unreal, Photoshop</li>
+                  </ul>
+                <!-- START Card 3 - Bottom -->
+                <div class="overflow-full-des">
+                  <div class="grouping">
+                    <p class="label">Description</p>
+                    <button class="close-overflow-full-des"><i class="fa-solid fa-xmark" aria-label="close description"></i></button>
+                  </div>
+                  <p>A lose screen that appears to give the player the option to leave back to main menu or retry the current level.</p>
+                </div>
+                <!-- END Card 3 - Bottom -->
+              </div>
+              <button class="open-lightbox open-lightbox-1" aria-label="open lightbox"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ai-experimenting">
+        <div class="wrapper">
+          <h2 class="section-heading">Level 2</h2>
+          <div class="lightbox-target-row">
+            <div class="lightbox-target-container">
+              <div class="lightbox-target-img lightbox-a two">
+                <div class="intentions">
+                  <h3>Intentions</h3>
+                  <p>On the event that the player clicks the "Leave" button results in the Leaving Battle menu appearing. The method worked and was quite simple to apply in various instances.</p>
+                </div>
+              </div>
+              <div class="lightbox-target-header">
+                <div>
+                <h2>Transition - Leave Button</h2>
+                <hr>
+                </div>
+                <!-- START Card 1 - Top -->
+                <div class="overflow-txt-container">
+                  <p class="overflow-des">A loading screen for the player leaving the game.</p>
+                </div>
+                <button class="view-more-overflow">Read more</button>
+                <!-- END Card 1 - Top -->
+                  <ul class="card-list">
+                    <li><span>Time Spent</span><i class="fa-solid fa-arrow-right"></i>1 Day</li>
+                    <li><span>People</span><i class="fa-solid fa-arrow-right"></i>Me</li>
+                    <li><span>Tools</span><i class="fa-solid fa-arrow-right"></i>Unreal, Photoshop</li>
+                  </ul>
+                <!-- START Card 1 - Bottom -->
+                <div class="overflow-full-des">
+                  <div class="grouping">
+                    <p class="label">Description</p>
+                    <button class="close-overflow-full-des"><i class="fa-solid fa-xmark" aria-label="close description"></i></button>
+                  </div>
+                  <p>A loading screen for the player leaving the game.</p>
+                </div>
+                <!-- END Card 1 - Bottom -->
+              </div>
+              <button class="open-lightbox open-lightbox-2" aria-label="open lightbox"></button>
+            </div>
+            <div class="lightbox-target-container">
+              <div class="lightbox-target-img lightbox-b two">
+                <div class="intentions">
+                  <h3>Intentions</h3>
+                  <p>The intent was a menu that pops up after clicking the retry button. It was later optimized so that it worked dynamically with all levels, instead of just one.</p>
+                </div>
+              </div>
+              <div class="lightbox-target-header">
+                <div>
+                <h2>Transition - Retry Button</h2>
+                <hr>
+                </div>
+                <!-- START Card 2 - Top -->
+                <div class="overflow-txt-container">
+                  <p class="overflow-des">A loading screen for the player attempting to retry the current level.</p>
+                </div>
+                <button class="view-more-overflow">Read more</button>
+                <!-- END Card 2 - Top -->
+                  <ul class="card-list">
+                    <li><span>Time Spent</span><i class="fa-solid fa-arrow-right"></i>1 Day</li>
+                    <li><span>People</span><i class="fa-solid fa-arrow-right"></i>Me</li>
+                    <li><span>Tools</span><i class="fa-solid fa-arrow-right"></i>Unreal, Photoshop</li>
+                  </ul>
+                <!-- START Card 2 - Bottom -->
+                <div class="overflow-full-des">
+                  <div class="grouping">
+                    <p class="label">Description</p>
+                    <button class="close-overflow-full-des"><i class="fa-solid fa-xmark" aria-label="close description"></i></button>
+                  </div>
+                  <p>A loading screen for the player attempting to retry the current level.</p>
+                </div>
+                <!-- END Card 2 - Bottom -->
+              </div>
+              <button class="open-lightbox open-lightbox-2" aria-label="open lightbox"></button>
+            </div>
+            <div class="lightbox-target-container">
+              <div class="lightbox-target-img lightbox-c two">
+                <div class="intentions">
+                  <h3>Intentions</h3>
+                  <p>The intent with this loading screen was to give the level a second to load in any assets that might not have been loaded in immediately. This method worked.</p>
+                </div>
+              </div>
+              <div class="lightbox-target-header">
+                <div>
+                  <h2>Transition - Level 2</h2>
+                  <hr>
+                </div>
+                <!-- START Card 3 - Top -->
+                <div class="overflow-txt-container">
+                  <p class="overflow-des">A loading screen created in order to send the player from mission one to mission two.</p>
+                </div>
+                <button class="view-more-overflow">Read more</button>
+                <!-- END Card 3 - Top -->
+                  <ul class="card-list">
+                    <li><span>Time Spent</span><i class="fa-solid fa-arrow-right"></i>1 Day</li>
+                    <li><span>People</span><i class="fa-solid fa-arrow-right"></i>Me</li>
+                    <li><span>Tools</span><i class="fa-solid fa-arrow-right"></i>Unreal, Photoshop</li>
+                  </ul>
+                <!-- START Card 2 - Bottom -->
+                <div class="overflow-full-des">
+                  <div class="grouping">
+                    <p class="label">Description</p>
+                    <button class="close-overflow-full-des"><i class="fa-solid fa-xmark" aria-label="close description"></i></button>
+                  </div>
+                  <p>A loading screen created in order to send the player from mission one to mission two.</p>
+                </div>
+                <!-- END Card 3 - Bottom -->
+              </div>
+              <button class="open-lightbox open-lightbox-2" aria-label="open lightbox"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="user-experience">
+        <div class="wrapper">
+          <h2 class="section-heading">Level 3</h2>
+          <div class="lightbox-target-row">
+            <div class="lightbox-target-container">
+              <div class="lightbox-target-img lightbox-p three">
+                <div class="intentions">
+                  <h3>Intentions</h3>
+                  <p>The image is designed to display how the blueprint operates for this specific UI element's functionality.</p>
+                </div>
+              </div>
+              <div class="lightbox-target-header">
+                <div>
+                  <h2>Scoreboard Blueprint</h2>
+                  <hr>
+                </div>
+                <!-- START Card 3 - Top -->
+                <div class="overflow-txt-container">
+                  <p class="overflow-des">I constructed a blueprint that increments the scoreboard by adding 100 points for every enemy destroyed on the field, ensuring that the score dynamically updates during gameplay.</p>
+                </div>
+                <button class="view-more-overflow">Read more</button>
+                <!-- END Card 3 - Top -->
+                  <ul class="card-list">
+                    <li><span>Time Spent</span><i class="fa-solid fa-arrow-right"></i>1 Hour</li>
+                    <li><span>People</span><i class="fa-solid fa-arrow-right"></i>Me</li>
+                    <li><span>Tools</span><i class="fa-solid fa-arrow-right"></i>Blueprint</li>
+                  </ul>
+                <!-- START Card 2 - Bottom -->
+                <div class="overflow-full-des">
+                  <div class="grouping">
+                    <p class="label">Description</p>
+                    <button class="close-overflow-full-des"><i class="fa-solid fa-xmark" aria-label="close description"></i></button>
+                  </div>
+                  <p>I constructed a blueprint that increments the scoreboard by adding 100 points for every enemy destroyed on the field, ensuring that the score dynamically updates during gameplay.</p>
+                </div>
+                <!-- END Card 3 - Bottom -->
+              </div>
+              <button class="open-lightbox open-lightbox-3" aria-label="open lightbox"></button>
+            </div>
+            <div class="lightbox-target-container">
+              <div class="lightbox-target-img lightbox-a three">
+                <div class="intentions">
+                  <h3>Intentions</h3>
+                  <p>The intent was to give the player a sense of progress as they played. Having the score increase by 1 wasn't fun so we changed it to 100 instead. The bigger numbers were better for user experience.</p>
+                </div>
+              </div>
+              <div class="lightbox-target-header">
+                <div>
+                <h2>Score Board Functionality</h2>
+                <hr>
+                </div>
+                <!-- START Card 1 - Top -->
+                <div class="overflow-txt-container">
+                  <p class="overflow-des">The score function adds a integer of 100 every time a enemy is destroyed.</p>
+                </div>
+                <button class="view-more-overflow">Read more</button>
+                <!-- END Card 1 - Top -->
+                  <ul class="card-list">
+                    <li><span>Time Spent</span><i class="fa-solid fa-arrow-right"></i>2 Days</li>
+                    <li><span>People</span><i class="fa-solid fa-arrow-right"></i>Me and One other</li>
+                    <li><span>Tools</span><i class="fa-solid fa-arrow-right"></i>Blueprint, Unreal</li>
+                  </ul>
+                <!-- START Card 1 - Bottom -->
+                <div class="overflow-full-des">
+                  <div class="grouping">
+                    <p class="label">Description</p>
+                    <button class="close-overflow-full-des"><i class="fa-solid fa-xmark" aria-label="close description"></i></button>
+                  </div>
+                  <p>The score function adds a integer of 100 every time a enemy is destroyed.</p>
+                </div>
+                <!-- END Card 1 - Bottom -->
+              </div>
+              <button class="open-lightbox open-lightbox-3" aria-label="open lightbox"></button>
+            </div>
+            <div class="lightbox-target-container">
+              <div class="lightbox-target-img lightbox-b three">
+                <div class="intentions">
+                  <h3>Intentions</h3>
+                  <p>Simple indicators for the Player to play or leave the game. The intent was that you would always start from the first level and work your way up. Then being able to easily select Quit Game in order to smoothly transition out.</p>
+                </div>
+              </div>
+              <div class="lightbox-target-header">
+                <div>
+                <h2>Start Menu</h2>
+                <hr>
+                </div>
+                <!-- START Card 2 - Top -->
+                <div class="overflow-txt-container">
+                  <p class="overflow-des">The main menu is a hub for further transition into the game.</p>
+                </div>
+                <button class="view-more-overflow">Read more</button>
+                <!-- END Card 2 - Top -->
+                  <ul class="card-list">
+                    <li><span>Time Spent</span><i class="fa-solid fa-arrow-right"></i>1 Day</li>
+                    <li><span>People</span><i class="fa-solid fa-arrow-right"></i>Me</li>
+                    <li><span>Tools</span><i class="fa-solid fa-arrow-right"></i>Unreal, Blueprint, Photoshop</li>
+                  </ul>
+                <!-- START Card 2 - Bottom -->
+                <div class="overflow-full-des">
+                  <div class="grouping">
+                    <p class="label">Description</p>
+                    <button class="close-overflow-full-des"><i class="fa-solid fa-xmark" aria-label="close description"></i></button>
+                  </div>
+                  <p>The main menu is a hub for further transition into the game.</p>
+                </div>
+                <!-- END Card 2 - Bottom -->
+              </div>
+              <button class="open-lightbox open-lightbox-3" aria-label="open lightbox"></button>
+            </div>
+            <div class="lightbox-target-container">
+              <div class="lightbox-target-img lightbox-c three">
+                <div class="intentions">
+                  <h3>Intentions</h3>
+                  <p>A reprieve and change in menus visually showing the player that they had won the game. with a different unique art pattern to it, the change in menus made the user experience a lot better.</p>
+                </div>
+              </div>
+              <div class="lightbox-target-header">
+                <div>
+                  <h2>Win Screen</h2>
+                  <hr>
+                </div>
+                <!-- START Card 3 - Top -->
+                <div class="overflow-txt-container">
+                  <p class="overflow-des">The win screen pops up after you completed every level which then transition, sending the player back to he main menu.</p>
+                </div>
+                <button class="view-more-overflow">Read more</button>
+                <!-- END Card 3 - Top -->
+                  <ul class="card-list">
+                    <li><span>Time Spent</span><i class="fa-solid fa-arrow-right"></i>1 Day</li>
+                    <li><span>People</span><i class="fa-solid fa-arrow-right"></i>Me</li>
+                    <li><span>Tools</span><i class="fa-solid fa-arrow-right"></i>Blueprint, Unreal, Photoshop</li>
+                  </ul>
+                <!-- START Card 2 - Bottom -->
+                <div class="overflow-full-des">
+                  <div class="grouping">
+                    <p class="label">Description</p>
+                    <button class="close-overflow-full-des"><i class="fa-solid fa-xmark" aria-label="close description"></i></button>
+                  </div>
+                  <p>The win screen pops up after you completed every level which then transition, sending the player back to he main menu.</p>
+                </div>
+                <!-- END Card 3 - Bottom -->
+              </div>
+              <button class="open-lightbox open-lightbox-3" aria-label="open lightbox"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-break">
+        <div class="wrapper double">
+          <div class="section-break-grouping">
+            <h2 class="section-heading">What I Learned</h2>
+            <p>This was my first time using Unreal Engine. I was able to learn a lot about Blue Print and how to implement it into UI elements in the game to make sure that the design goal of the UI was met. Here I was able to learn from others who were more experience in engine and I was able to pick that up and ask questions when needed to get the best results for our game.</p>
+          </div>
+          <div class="section-break-grouping">
+            <h2 class="section-heading">Getting User Experience</h2>
+            <div class="video-row">
+            <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/TuLu-aoTT8g" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+            </iframe>
+            <p>I take time to give the game out to others to see what worked and what did not work with the game. Recording there experience and asking questions to get a feel for how the user is feeling about certain mechanics and systems within the game. Along side recording bugs and noting them down for the design team.</p>
+        </div>
+        </div>
+        <div class="what-i-learned-bubble"></div>
+        </div>
+      </section>
+
+
+
+      <!-- Lightbox Dialogs -->
+      <div class="lightbox lightbox-1">
+        <div class="lightbox-wrapper">
+          <div class="lightbox-column">
+            <div class="lightbox-focus-header">
+              <span id="lightbox-tracker"></span>
+              <h2 class="lightbox-heading">Level 1</h2>
+              <button class="close-lightbox" aria-label="close lightbox"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="lightbox-focus-container">
+              <button class="previous-lightbox-img arrow" aria-label="previous"><i class="fa-solid fa-arrow-left"></i></button>
+              <img class="lightbox-focus-img" alt="display image">
+              <button class="next-lightbox-img arrow" aria-label="next"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="lightbox-row">
+              <button class="lightbox-img lightbox-a one" aria-label="view lightbox image"></button>
+              <button class="lightbox-img lightbox-b one" aria-label="view lightbox image"></button>
+              <button class="lightbox-img lightbox-c one" aria-label="view lightbox image"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lightbox lightbox-2">
+        <div class="lightbox-wrapper">
+          <div class="lightbox-column">
+            <div class="lightbox-focus-header">
+              <span id="lightbox-tracker"></span>
+              <h2 class="lightbox-heading">Level 2</h2>
+              <button class="close-lightbox" aria-label="close lightbox"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="lightbox-focus-container">
+              <button class="previous-lightbox-img arrow" aria-label="previous"><i class="fa-solid fa-arrow-left"></i></button>
+              <img class="lightbox-focus-img" alt="display image">
+              <button class="next-lightbox-img arrow" aria-label="next"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="lightbox-row">
+              <button class="lightbox-img lightbox-a two" aria-label="view lightbox image"></button>
+              <button class="lightbox-img lightbox-b two" aria-label="view lightbox image"></button>
+              <button class="lightbox-img lightbox-c two" aria-label="view lightbox image"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lightbox lightbox-3">
+        <div class="lightbox-wrapper">
+          <div class="lightbox-column">
+            <div class="lightbox-focus-header">
+              <span id="lightbox-tracker"></span>
+              <h2 class="lightbox-heading">Level 3</h2>
+              <button class="close-lightbox" aria-label="close lightbox"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="lightbox-focus-container">
+              <button class="previous-lightbox-img arrow" aria-label="previous"><i class="fa-solid fa-arrow-left"></i></button>
+              <img class="lightbox-focus-img" alt="display image">
+              <button class="next-lightbox-img arrow" aria-label="next"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="lightbox-row">
+              <button class="lightbox-img lightbox-p three" aria-label="view lightbox image"></button>
+              <button class="lightbox-img lightbox-a three" aria-label="view lightbox image"></button>
+              <button class="lightbox-img lightbox-b three" aria-label="view lightbox image"></button>
+              <button class="lightbox-img lightbox-c three" aria-label="view lightbox image"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      </main>
+
+
+      <footer>
+        <div class="wrapper">
+          <div class="top-footer">
+            <div class="left-nav">
+              <nav>
+                <h3><i class="fa-solid fa-trophy"></i>Games</h3>
+                <a href="./good-catch.html">Good Catch</a>
+                <a href="./llamas-with-tanks.html" class="active">Llamas With Tanks</a>
+                <a href="./unhappy-home-designer.html">Unhappy Home Designer</a>
+              </nav>
+              <nav>
+                <h3><i class="fa-solid fa-paperclip"></i>Other</h3>
+                <a href="./index.html">Home</a>
+                <a href="./contact.html">Contact</a>
+              </nav>
+            </div>
+            <div class="stay-in-touch">
+              <h3>Stay In Touch?</h3>
+              <p>Mobile | ###-###-###</p>
+              <p>Email | email@address.com</p>
+              <a href="./images/global/chris-turner-resume.pdf" target="_blank" aria-label="open resume pdf in a new window" class="target-link resume"><i class="fa-solid fa-arrow-up-right-from-square"></i> Resume</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+      <div id="lightbox-blur"></div>
+      <div class="popover-b-overlay" id="blur-overlay"></div>
+      <script src="./javascript/global/horizontal-marquee.js"></script>
+      <script src="./javascript/global/popover.js"></script>
+      <script src="./javascript/global/lightbox.js"></script>
+      <script src="./javascript/global/cards.js"></script>
+  </body>
+
+</html>

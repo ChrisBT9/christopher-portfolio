@@ -1,0 +1,61 @@
+.full-screen-preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    background: #fff;
+    opacity: 1;
+    padding: 1rem;
+    transition: opacity 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.full-screen-preloader .preloader-dot {
+    width: 18px;
+    height: 18px;
+    border-radius: 12px;
+    margin: 9px;
+    transform-origin: center;
+    display: flex;
+    animation: loadingPulse 1.5s infinite linear;
+}
+.full-screen-preloader .preloader-dot.one {
+    animation-delay: 0s;
+    background: #ececec;
+}
+.full-screen-preloader .preloader-dot.two {
+    animation-delay: 0.2s;
+    background: #dadada;
+}
+.full-screen-preloader .preloader-dot.three {
+    animation-delay: 0.4s;
+    background: #b3b3b3;
+}
+.full-screen-preloader .preloader-dot.four {
+    animation-delay: 0.6s;
+    background: #949494;
+} 
+.full-screen-preloader .preloader-dot.five {
+    animation-delay: 0.8s;
+    background: #757575;
+}  
+@keyframes loadingPulse {
+    0% {
+        transform: scale(1);
+    }
+    10% {
+        transform: scale(1.5);
+    }
+    20% {
+        transform: scale(2);
+    }
+    30% {
+        transform: scale(1.5);
+    }
+    40% {
+        transform: scale(1);
+    }
+}
