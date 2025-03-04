@@ -172,6 +172,9 @@ main .projects .project-description {
     -webkit-box-orient: vertical;  
     overflow: hidden;
 }
+main .hero {
+    height: 90dvh;
+}
 
 
 
@@ -183,7 +186,15 @@ main .projects .project-description {
 
 
 
-
+@media(max-height: 450px), (max-width: 500px) {
+    main .hero {
+        height: auto !important;
+    }
+    main .hero .slider {
+        padding-block: 5rem;
+        height: 100%;
+    }
+}
 
 
 @media(max-width: 600px) {
