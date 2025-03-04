@@ -189,9 +189,6 @@ main .hero .video-row iframe, main .hero .video-row img {
     max-height: 20rem;
     height: 100%;
 }
-main .hero .video-row img {
-
-}
 main .hero .video-row .txt-group {
     height: fit-content;
 }
