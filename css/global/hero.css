@@ -1,5 +1,5 @@
 main .hero {
-    height: 70vh;
+    height: 90vh;
     position: relative;
     overflow: hidden;
 }
@@ -202,9 +202,9 @@ main .hero .video-row .txt-group {
     }
 }
 @media (max-height: 900px) {
-    main .hero:not(main .contact__hero) {
+    /* main .hero:not(main .contact__hero) {
         height: auto !important;
-    }
+    } */
     main .hero .slider:not(main .contact__hero .slider) {
         padding-block: 5rem;
     }

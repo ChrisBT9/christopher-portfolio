@@ -1,6 +1,9 @@
 footer {
     background-image: linear-gradient(180deg, var(--body-bg-clr), var(--main-bg-clr));
 }
+main .hero {
+    height: 70vh;
+}
 main .hero .wrapper {
     display: grid;
     grid-template-columns: repeat(2,1fr);
