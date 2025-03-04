@@ -151,20 +151,22 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
-  const lightboxRow = document.querySelector('.lightbox-row');
-  if (lightboxRow) {
-    lightboxRow.addEventListener('click', function(event) {
-      if (event.target === lightboxRow) {
-        const openLightboxes = document.querySelectorAll('.lightbox');
-        openLightboxes.forEach(lb => {
-          lb.style.display = "none";
-        });
-        if (blurElement) {
-          blurElement.style.display = "none";
+  const lightboxRows = document.querySelectorAll('.lightbox-row');
+  if (lightboxRows.length) {
+    lightboxRows.forEach(row => {
+      row.addEventListener('click', function(event) {
+        if (event.target === row) {
+          const openLightboxes = document.querySelectorAll('.lightbox');
+          openLightboxes.forEach(lb => {
+            lb.style.display = "none";
+          });
+          if (blurElement) {
+            blurElement.style.display = "none";
+          }
+          document.body.style.overflow = "";
+          document.documentElement.style.overflow = "";
         }
-        document.body.style.overflow = "";
-        document.documentElement.style.overflow = "";
-      }
+      });
     });
   }
 

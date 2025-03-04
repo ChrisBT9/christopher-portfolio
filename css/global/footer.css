@@ -67,10 +67,10 @@ footer .stay-in-touch {
     text-align: right;
     align-items: flex-end;
 }
-footer .stay-in-touch p:nth-child(2), footer .stay-in-touch a:nth-child(2) {
+footer .stay-in-touch a:nth-child(2) {
     margin-top: 1rem;
 }
-footer .stay-in-touch a:hover {
+footer .stay-in-touch a:not(.stay-in-touch .resume):hover {
     text-decoration: underline;
 }
 footer .stay-in-touch .resume {
