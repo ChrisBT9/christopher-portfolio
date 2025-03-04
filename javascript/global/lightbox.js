@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function() {
         lb.style.display = "none";
       });
       blurElement.style.display = "none";
-      // Re-enable scrolling on both body and html
       document.body.style.overflow = "";
       document.documentElement.style.overflow = "";
     });
@@ -118,7 +117,6 @@ document.addEventListener("DOMContentLoaded", function() {
         if (blurElement) {
           blurElement.style.display = "none";
         }
-        // Re-enable scrolling on both body and html
         document.body.style.overflow = "";
         document.documentElement.style.overflow = "";
       });
@@ -138,7 +136,6 @@ document.addEventListener("DOMContentLoaded", function() {
       if (blurElement) {
         blurElement.style.display = "block";
       }
-      // Disable scrolling on both body and html
       document.body.style.overflow = "hidden";
       document.documentElement.style.overflow = "hidden";
 
@@ -151,6 +148,40 @@ document.addEventListener("DOMContentLoaded", function() {
       if (activeIndex === -1) activeIndex = 0;
       updateFocus(lightboxContainer, activeIndex);
       setupLightboxInteractions(lightboxContainer);
+    });
+  });
+
+  const lightboxRow = document.querySelector('.lightbox-row');
+  if (lightboxRow) {
+    lightboxRow.addEventListener('click', function(event) {
+      if (event.target === lightboxRow) {
+        const openLightboxes = document.querySelectorAll('.lightbox');
+        openLightboxes.forEach(lb => {
+          lb.style.display = "none";
+        });
+        if (blurElement) {
+          blurElement.style.display = "none";
+        }
+        document.body.style.overflow = "";
+        document.documentElement.style.overflow = "";
+      }
+    });
+  }
+
+  const focusHeaders = document.querySelectorAll('.lightbox-focus-header');
+  focusHeaders.forEach(header => {
+    header.addEventListener('click', function(event) {
+      if (event.target === header) {
+        const lightboxContainer = header.closest('.lightbox');
+        if (lightboxContainer) {
+          lightboxContainer.style.display = "none";
+        }
+        if (blurElement) {
+          blurElement.style.display = "none";
+        }
+        document.body.style.overflow = "";
+        document.documentElement.style.overflow = "";
+      }
     });
   });
 });
