@@ -118,6 +118,12 @@ main .hero .txt-group .interactable-container {
     align-items: center;
     height: 2rem;
 }
+main .hero .interactable-container p {
+    padding-inline: .5rem;
+}
+main .hero .interactable-container p::before {
+    display: none;
+}
 main .hero .txt-group .interactable {
     font-size: 1.2rem;
     color: hsl(219, 100%, 80%);
