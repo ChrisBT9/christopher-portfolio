@@ -117,6 +117,7 @@ main section > .wrapper:not(main .hero > .wrapper) {
 }
 .section-break {
     border-block: 1px solid rgba(255,255,255,.1);
+    position: relative;
 }
 .section-break .wrapper {
     display: flex;
@@ -160,6 +161,50 @@ main .section-break .video-row iframe {
 main .section-break .video-row p {
     height: fit-content;
     max-width: 80ch;
+}
+main .section-break__icon {
+    max-width: 3rem;
+    min-width: 3rem;
+    height: 3rem;
+    display: grid;
+    place-items: center;
+    background: var(--body-bg-clr);
+    font-size: 1.5rem;
+    position: absolute;
+    outline: 1px solid rgba(255,255,255,.1);
+}
+main .section-break__icon.bottom {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%) rotate(45deg);
+}
+main .section-break__icon.top {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+main .section-break__icon i {
+    animation: bounceEffect 5s infinite;
+    animation-timing-function: ease-in-out;
+    transform: rotate(-45deg); /* Keeps arrow direction fixed */
+}
+main .section-break__icon.last i {
+    animation: none;
+}
+
+@keyframes bounceEffect {
+    0% { transform: translate(0, 0) rotate(-45deg); }
+    16.9% { transform: translate(2px, 2px) rotate(-45deg); }  /* Move downward */
+    27.5% { transform: translate(-1.5px, -1.5px) rotate(-45deg); } /* Move slightly up */
+    35.5% { transform: translate(1px, 1px) rotate(-45deg); }
+    57.7% { transform: translate(-0.5px, -0.5px) rotate(-45deg); }
+    65.4% { transform: translate(0.3px, 0.3px) rotate(-45deg); }
+    69% { transform: translate(-0.2px, -0.2px) rotate(-45deg); }
+    72.6% { transform: translate(0.1px, 0.1px) rotate(-45deg); }
+    78.7% { transform: translate(-0.05px, -0.05px) rotate(-45deg); }
+    92.4% { transform: translate(0, 0) rotate(-45deg); }  /* Resting position */
+    95% { transform: translate(0, 0) rotate(-45deg); }
+    100% { transform: translate(0, 0) rotate(-45deg); }
 }
 
 main .intentions p span {
@@ -213,7 +258,10 @@ main .intentions p span {
     }
   }
   
-
+main .card-section-wrapper {
+    padding-block: 0 !important;
+    margin-block: 5rem;
+}
 
 /*---- Scrollbar ----*/
 ::-webkit-scrollbar {

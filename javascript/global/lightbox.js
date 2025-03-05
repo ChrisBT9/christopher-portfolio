@@ -10,6 +10,13 @@ document.addEventListener("DOMContentLoaded", function() {
       document.body.style.overflow = "";
       document.documentElement.style.overflow = "";
     });
+    blurElement.addEventListener("wheel", function(e) {
+      const openLightbox = document.querySelector('.lightbox[style*="flex"]');
+      if (openLightbox) {
+        openLightbox.scrollTop += e.deltaY;
+        e.preventDefault();
+      }
+    }, {passive: false});
   }
 
   function getLightboxNumberFromButton(button) {

@@ -1,6 +1,3 @@
-footer {
-    background-image: linear-gradient(180deg, var(--body-bg-clr), var(--main-bg-clr));
-}
 /* projects */
 main .projects {
     color: #fff;

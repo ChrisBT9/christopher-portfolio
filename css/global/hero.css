@@ -1,5 +1,5 @@
 main .hero {
-    height: 90vh;
+    height: 87.5vh;
     position: relative;
     overflow: hidden;
 }
@@ -73,18 +73,15 @@ main .hero .hero__title {
     font-size: 5rem;
     position: relative;
     font-weight: 900;
+    display: flex;
+    flex-direction: column;
 }
 main .hero .hero__title::before {
     content: '';
-    position: absolute;
     font-size: 1.2rem;
-    top: 0;
-    left: 0;
-    transform: translateY(-100%);
     opacity: .5;
     font-style: italic;
     font-weight: 700;
-    animation: hover 2s ease-in-out infinite alternate;
 }
 main .hero__title.name::before {
     content: 'UI/UX Designer';
@@ -213,10 +210,5 @@ main .hero .video-row .txt-group {
     main .hero .hero__title {
         font-size: 2rem;
         text-align: center;
-    }
-    main .hero .hero__title::before {
-        top: 0;
-        left: 50%;
-        transform: translate(-50%, -100%);
     }
 }
