@@ -186,10 +186,17 @@ main .section-break__icon.top {
 main .section-break__icon i {
     animation: bounceEffect 5s infinite;
     animation-timing-function: ease-in-out;
-    transform: rotate(-45deg); /* Keeps arrow direction fixed */
+    transform: rotate(-45deg);
+    opacity: .25;
 }
 main .section-break__icon.last i {
     animation: none;
+    color: var(--green);
+}
+
+.section-break__icon.in-view i {
+    opacity: 1;
+    transition: opacity 0.8s ease-in-out;
 }
 
 @keyframes bounceEffect {
