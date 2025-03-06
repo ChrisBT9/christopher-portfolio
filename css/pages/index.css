@@ -1,6 +1,8 @@
 /* projects */
 main .projects {
     color: #fff;
+    position: relative;
+    border-top: 1px solid rgba(255,255,255,.1);
 }
 main .projects * {
     color: inherit;
@@ -169,11 +171,6 @@ main .projects .project-description {
     -webkit-box-orient: vertical;  
     overflow: hidden;
 }
-main .hero {
-    height: 90dvh;
-}
-
-
 
 
 
