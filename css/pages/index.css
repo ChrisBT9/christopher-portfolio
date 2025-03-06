@@ -180,7 +180,7 @@ main .projects .project-description {
 
 
 
-@media(max-height: 450px), (max-width: 500px) {
+@media(max-height: 800px), (max-width: 1100px) {
     main .hero {
         height: auto !important;
     }
