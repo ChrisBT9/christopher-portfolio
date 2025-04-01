@@ -193,12 +193,8 @@ main .section-break__icon i {
     transform: rotate(-45deg);
     opacity: .1;
 }
-main .section-break__icon.bottom.last {
-    border-color: hsla(166, 100%, 50%, .2);
-}
 main .section-break__icon.last i {
     animation: none;
-    color: var(--green);
 }
 
 @keyframes bounceEffect {
