@@ -393,7 +393,41 @@
 .lightbox-d.two {
     background-image: url("");
 }
-
+main .card-overlay {
+    display: grid;
+    place-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    background: rgba(0,0,0,.8);
+    z-index: 9999;
+    display: none;
+}
+main .card-overlay > div {
+    height: 100vh;
+    overflow: scroll;
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+    position: relative;
+}
+main .card-overlay img {
+    max-height: 40rem;
+    height: 100%;
+    object-fit: contain;
+}
+main .card-overlay button {
+    min-height: 3rem;
+    min-width: 3rem;
+    border-radius: 50%;
+    background: rgba(255,255,255,.1);
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+}
 @media (max-width: 800px) {
     .lightbox-img {
         height: 5rem;

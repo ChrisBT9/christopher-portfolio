@@ -127,6 +127,9 @@ main section > .wrapper:not(main .hero > .wrapper) {
 .section-break .wrapper.double {
     gap: 5rem;
 }
+.section-break .wrapper.double > * {
+    /* border: 1px solid red; */
+}
 .section-break p {
     font-size: 1.2rem;
     line-height: 2;
@@ -171,31 +174,8 @@ main .section-break__icon {
     background: var(--body-bg-clr);
     font-size: 1.5rem;
     position: absolute;
-    border: 2px solid rgba(255,255,255,.1);
+    border: 1px solid rgba(255,255,255,.1);
 }
-
-main .section-break__icon__dash {
-    content: '';
-    position: absolute;
-    background-image: linear-gradient(90deg, transparent, #fff, transparent);
-    width: 12.5rem;
-    height: 2px;
-    z-index: -1;
-    opacity: .1;
-  }
-  main .section-break__icon__dash.last {
-    background-image: linear-gradient(90deg, transparent, var(--green), transparent);
-  }
-  main .section-break__icon__dash.top {
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  main .section-break__icon__dash.bottom {
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 50%);
-  }
 
 main .section-break__icon.bottom {
     bottom: 0;
@@ -214,28 +194,11 @@ main .section-break__icon i {
     opacity: .1;
 }
 main .section-break__icon.bottom.last {
-    border-color: hsla(166, 100%, 50%, .1);
-}
-main .section-break__icon.bottom.last.in-view {
-    border-color: hsla(166, 100%, 50%, 1);
+    border-color: hsla(166, 100%, 50%, .2);
 }
 main .section-break__icon.last i {
     animation: none;
     color: var(--green);
-}
-
-.section-break__icon.in-view i {
-    opacity: 1;
-    transition: opacity .8s ease-in-out;
-}
-main .section-break__icon__dash.in-view {
-    opacity: 1;
-    transition: opacity .8s ease-in-out;
-  }
-
-main .section-break__icon.in-view {
-    border-color: rgba(255,255,255,1);
-    transition: border-color .8s ease-in-out;
 }
 
 @keyframes bounceEffect {
