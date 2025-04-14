@@ -127,9 +127,6 @@ main section > .wrapper:not(main .hero > .wrapper) {
 .section-break .wrapper.double {
     gap: 5rem;
 }
-.section-break .wrapper.double > * {
-    /* border: 1px solid red; */
-}
 .section-break p {
     font-size: 1.2rem;
     line-height: 2;
