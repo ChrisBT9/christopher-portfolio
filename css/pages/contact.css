@@ -66,6 +66,7 @@ main .hero__right-content .scrollable {
     justify-content: flex-start; 
     height: 40rem;
     gap: 3rem;
+    overscroll-behavior: contain;
 }
 main .hero__right-content::before {
     content: '';

@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Christopher Turner - Portfolio</title>
+    <!-- Preloaders -->
+    <link rel="preload" as="image" href="./images/pages/llamas-with-tanks/llamas-with-tanks-hero.webp";>
+    <!-- Styling -->
     <link rel="stylesheet" href="./css/global/universal.css">
     <link rel="stylesheet" href="./css/global/header.css">
     <link rel="stylesheet" href="./css/global/footer.css">
@@ -14,13 +17,12 @@
     <link rel="stylesheet" href="./css/global/lightbox.css">
     <link rel="stylesheet" href="./css/pages/llamas-with-tanks.css">
     <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
 
   <body>
     <header>
         <div class="wrapper">
-          <a href="./index.html" class="logo"><h1>Chris Turner</h1></a>
+          <a href="./index.html" class="logo"><h1>Chris Turner<span>UI/UX</span></h1></a>
           <nav class="navbar desktop">
             <a href="./index.html">Home</a>
             <a href="./good-catch.html">Good Catch</a>
@@ -62,10 +64,10 @@
                       allowfullscreen>
                       </iframe> 
                     <ul class="txt-group">
-                        <li><p><span>Duration</span> <i class='bx bx-right-arrow-alt'></i> Aug 2024 - Nov 2024</p></li>
-                        <li><p><span>Team Size</span> <i class='bx bx-right-arrow-alt'></i> 8 People</p></li>
-                        <li><p><span>Engine</span> <i class='bx bx-right-arrow-alt'></i> Unreal</p></li>
-                        <li><p><span>Role</span> <i class='bx bx-right-arrow-alt'></i> UI/UX Design</p></li>
+                        <li><p><span>Duration</span> <i class="fa-solid fa-arrow-right"></i> Aug 2024 - Nov 2024</p></li>
+                        <li><p><span>Team Size</span> <i class="fa-solid fa-arrow-right"></i> 8 People</p></li>
+                        <li><p><span>Engine</span> <i class="fa-solid fa-arrow-right"></i> Unreal</p></li>
+                        <li><p><span>Role</span> <i class="fa-solid fa-arrow-right"></i> UI/UX Design</p></li>
                     </ul>
                   </div>
                 </div>
@@ -451,7 +453,7 @@
       <div class="popover-b-overlay" id="blur-overlay"></div>
       <script src="./javascript/global/horizontal-marquee.js"></script>
       <script src="./javascript/global/popover.js"></script>
-      <script src="./javascript/global/lightbox.js"></script>
+      <script src="./javascript/global/lightbox.js" defer></script>
       <script src="./javascript/global/cards.js"></script>
   </body>
 

@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Christopher Turner - Portfolio</title>
+    <!-- Preloaders -->
+    <link rel="preload" as="image" href="./images/pages/good-catch/good-catch-hero.webp";>
+    <!-- Styling -->
     <link rel="stylesheet" href="./css/global/universal.css">
     <link rel="stylesheet" href="./css/global/header.css">
     <link rel="stylesheet" href="./css/global/footer.css">
@@ -20,7 +23,7 @@
   <body>
     <header>
         <div class="wrapper">
-          <a href="./index.html" class="logo"><h1>Chris Turner</h1></a>
+          <a href="./index.html" class="logo"><h1>Chris Turner<span>UI/UX</span></h1></a>
           <nav class="navbar desktop">
             <a href="./index.html">Home</a>
             <a href="./good-catch.html" class="active">Good Catch</a>
@@ -55,13 +58,13 @@
                     <h2 class="hero__title good-catch">Good Catch!</h2>
                     <p class="hero__game-description">In a world where you find yourself shipwrecked on a mysterious archipelago, you must fish monsters from the waters and capture them. Use these monsters to battle others monsters, gaining strength and skills until you are ready to face the mighty leviathan that holds you captive within the archipelago.</p>
                     <div class="video-row">
-                    <img src="./images/pages/good-catch/goodcatch-iframe.webp" width="560" height="315" alt="gameplay for goodcatch">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Xr65gzICz94" title="Good Catch! Promo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <ul class="txt-group">
-                        <li><p><span>Duration</span> <i class='bx bx-right-arrow-alt'></i> Aug 2024 - In Progress</p></li>
-                        <li><p><span>Team Size</span> <i class='bx bx-right-arrow-alt'></i> 9 People</p></li>
-                        <li><p><span>Engine</span> <i class='bx bx-right-arrow-alt'></i> Unity</p></li>
-                        <li><p><span>Role</span> <i class='bx bx-right-arrow-alt'></i> Lead Designer</p></li>
-                        <li><h6 class="work-in-progress"><i class="fi fi-rs-triangle-warning"></i> Work In Progress <i class="fi fi-rs-triangle-warning"></i></h6></li>
+                        <li><p><span>Duration</span> <i class="fa-solid fa-arrow-right"></i> Aug 2024 - In Progress</p></li>
+                        <li><p><span>Team Size</span> <i class="fa-solid fa-arrow-right"></i> 9 People</p></li>
+                        <li><p><span>Engine</span> <i class="fa-solid fa-arrow-right"></i> Unity</p></li>
+                        <li><p><span>Role</span> <i class="fa-solid fa-arrow-right"></i> Lead Designer</p></li>
+                        <li><h6 class="work-in-progress"><i class="fa-solid fa-triangle-exclamation"></i> Work In Progress <i class="fa-solid fa-triangle-exclamation"></i></h6></li>
                     </ul>
                   </div>
                 </div>
@@ -539,9 +542,8 @@
       <div id="lightbox-blur"></div>
       <div class="popover-b-overlay" id="blur-overlay"></div>
       <script src="./javascript/global/horizontal-marquee.js"></script>
-      <script src="./javascript/global/tracker-icon.js"></script>
       <script src="./javascript/global/popover.js"></script>
-      <script src="./javascript/global/lightbox.js"></script>
+      <script src="./javascript/global/lightbox.js" defer></script>
       <script src="./javascript/global/cards.js"></script>
   </body>
 

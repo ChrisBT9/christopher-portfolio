@@ -152,6 +152,8 @@ main .hero .txt-group {
     list-style: none;
 }
 main .hero ul.txt-group p {
+    display: flex;
+    align-items: center;
     background: rgba(255,255,255,.1);
     padding: .1rem .5rem;
     border-radius: 3px;
@@ -163,7 +165,9 @@ main .hero .txt-group p span {
     color: var(--green);
 }
 main .hero .txt-group p i {
-    font-size: 1rem;
+    font-size: .8rem;
+    margin-top: 4px;
+    margin-inline: .5rem;
 }
 main .hero .txt-group::before {
     content: '';
