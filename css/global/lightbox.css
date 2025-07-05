@@ -1,10 +1,10 @@
 /* Target Lightbox Styles */
 .lightbox-target-row {
-    --grid-min-col-size: 365px;
+    --grid-min-col-size: 275px;
     
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(min(var(--grid-min-col-size), 100%), 1fr));
-    gap: 2rem;
+    gap: 1rem;
 }
 .lightbox-target-header {
     display: flex;
@@ -448,5 +448,23 @@ main .card-overlay button {
 @media (max-width: 480px) {
     .lightbox-focus-container .arrow {
         display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    main .card-section-wrapper {
+        padding: 0 !important;
+    }
+    main .card-section-wrapper .section-heading {
+        padding-inline: 1rem;
+        margin: 0;
+    }
+    .lightbox-target-row {
+        overflow: auto;
+        display: flex;
+        padding: 2rem 1rem;
+    }
+    .lightbox-target-row > * {
+        min-width: 90%;
     }
 }

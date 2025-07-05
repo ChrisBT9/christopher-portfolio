@@ -73,6 +73,9 @@ footer .stay-in-touch {
 footer .stay-in-touch a:nth-child(2) {
     margin-top: 1rem;
 }
+footer .stay-in-touch a:not(.stay-in-touch .resume) {
+    user-select: none;
+}
 footer .stay-in-touch a:not(.stay-in-touch .resume):hover {
     text-decoration: underline;
 }

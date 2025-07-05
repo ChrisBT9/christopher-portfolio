@@ -219,6 +219,5 @@ main .hero .video-row .txt-group {
 @media (max-width: 460px) {
     main .hero .hero__title {
         font-size: 2rem;
-        text-align: center;
     }
 }
