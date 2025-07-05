@@ -70,6 +70,9 @@ footer .stay-in-touch {
     text-align: right;
     align-items: flex-end;
 }
+footer .stay-in-touch a span {
+    color: rgb(153, 189, 255);
+}
 footer .stay-in-touch a:nth-child(2) {
     margin-top: 1rem;
 }
