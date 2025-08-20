@@ -93,14 +93,18 @@ main .hero__right-content p {
     font-size: 1rem;
 }
 main .tab {
-    padding: .75rem 1.75rem;
-    background: hsl(214, 56%, 47%);
-    border-radius: 5px;
     text-transform: uppercase;
     font-size: .8rem;
-    font-weight: 400;
+    font-weight: 500;
     width: fit-content;
     transition: all .2s ease-in-out;
+    padding: .5rem 1rem;
+    text-align: center;
+    border-radius: 100vw;
+    background: var(--transparent-blue);
+    color: var(--solid-blue);
+    font-family: "Poppins", sans-serif;
+    line-height: 1.5;
 }
 main .hero__right-content .grouping {
     display: flex;
@@ -195,10 +199,6 @@ main .hero .bubble-blur {
     }
 }
 @media (max-width: 480px) {
-    main .tab {
-        flex-grow: 2;
-        text-align: center;
-    }
     main .hero__right-content .scrollable {
         padding: 0;
         padding-bottom: 4rem;

@@ -9,6 +9,8 @@
     --body-bg-clr: hsl(220, 20%, 12%);
     --main-bg-clr: hsl(233, 11%, 17%);
     --green: #00ffc4; 
+    --transparent-blue: hsla(219, 100%, 81%, .25);
+    --solid-transparent-blue: hsl(223, 30%, 27%);
 }
 
 *::before, *::after {
